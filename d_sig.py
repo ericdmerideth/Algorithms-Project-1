@@ -1,9 +1,6 @@
 """
-Algorithms I
-Eric Merideth Jake Speets
-
-This file is used for signing and
-authenticating digital signatures.
+Algorithms Project 1
+Eric Merideth - Jacob Speights - Michael Olaoye
 
 """
 

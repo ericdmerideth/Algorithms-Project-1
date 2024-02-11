@@ -1,6 +1,6 @@
 """
 Algorithms Project 1
-Eric Merideth - Jake Speets -
+Eric Merideth - Jacob Speights - Michael Olaoye
 """
 
 
@@ -11,7 +11,7 @@ import d_sig
 def main():
     '''Main driver'''
     # Generate RSA keys
-    k_gen.generateKeys(1000, 10000)  # Generates RSA keys, where p and q are prime numbers in range 1,000 - 10,000
+    k_gen.generateKeys(10000, 100000)  # Prime number range: 10,000 to 100,000
     print('RSA keys have been generated.')
 
     new_n = k_gen.n_perm
@@ -158,6 +158,6 @@ def main():
         else: # Makes sure user enters a proper choice
             print('\nPlease enter a valid choice (1-3).\n')
 
-    print ('\nThanks for Playing!')
+    print ('\nExiting...')
 
 main()
