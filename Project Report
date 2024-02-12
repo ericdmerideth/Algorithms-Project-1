@@ -1,1 +1,21 @@
-*Project Report*
+*Project Report Draft*
+
+Introduction: 
+What are the requirements of the project? What are the responsibilities and contributions of each groupmate? 
+
+Problem analysis and identification of algorithms: 
+Specify the requirements of related subtasks, and identify efficient algorithms available to meet the requirements.  
+
+Solution design: 
+Dividing the project into manageable subtasks as functional units. 
+Specify I/O’s for functional unit. Arithmetic ways to carry out the O from the I of each unit. 
+The design of integrated software solution that assembles functional units (a flowchart is suggested.)  
+
+Implementation: Specify software development environment and tools. Specify the contributions of each groupmate in the implementation. Code segments are not required. 
+I will check the entire program anyway. 
+
+Testing: Unit and integration tests with I/O samples. Bugs or problem identified in testing and corrections made if any. It is strongly suggested to include the steps of your 
+integration test with the I/O (screenshots can be helpful). I may reference the steps to 
+verify your program. 
+
+Summary: Summarize your learning outcomes through completing this project. 
