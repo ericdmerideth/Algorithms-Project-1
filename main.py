@@ -94,6 +94,8 @@ def main():
                 elif (p_sel == '3'):
                     k_own = True
                     print ('\n')
+                    prog_exit = False
+                    break
 
         # The owner of the keys
         elif (u_sel == '2'):
