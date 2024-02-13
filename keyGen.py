@@ -1,23 +1,30 @@
 # -*- coding: utf-8 -*-
-import random
-import math
 
+import math
+import random
 
 def gen_prime(n1, n2):
-    ''''This function generates pseudo-primes using Fermat's theorem'''
-    pseudo_prime = False
-    while not pseudo_prime:
+    '''Generates pseudo-primes using Fermat's theorem with edge case protection and input adjustment.'''
+    # Adjust if n2 is less than n1
+    if n2 < n1:
+        n1, n2 = n2, n1  # Swap values to ensure n1 is always less than n2
+
+    attempts = 0
+    max_attempts = 10000  # Set a limit to prevent infinite loops
+    while True:
+        if attempts >= max_attempts:
+            raise Exception("Unable to find a prime number within the specified range after numerous attempts.")
+        attempts += 1
+
         pseudo_prime = True
         p = random.randint(n1, n2)
-        for i in range(50):
-        # According to our research, a k-value of 50 is effective in testing
-        # primes while still remaining efficient.
-            j = random.randint(2, p)
-            if pow(j, p-1, p) > 1:
+        for i in range(50):  # According to research, a k-value of 50 is effective
+            j = random.randint(2, p-2)  # Adjusted to avoid potential edge cases with j=1 or j=p-1
+            if pow(j, p-1, p) != 1:
                 pseudo_prime = False
                 break
-    return p
-        
+        if pseudo_prime:
+            return p
 
 def ext_gcd(a, b):
     '''
